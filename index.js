@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000";
+const API_URL = "https://nineteen-eighty-four.herokuapp.com";
 let lastId = null;
 let modal = null;
 let screen = null;
