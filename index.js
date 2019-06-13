@@ -109,6 +109,9 @@ document.addEventListener("DOMContentLoaded", function(){
   modal.addEventListener("submit", updateSentence)
   hideModal()
 
+  document.getElementById("close-modal").addEventListener("click", hideModal)
+  screen.addEventListener("click", hideModal)
+
   const sentenceList = document.getElementById("sentences")
   fetchSentences(sentenceList)
 
