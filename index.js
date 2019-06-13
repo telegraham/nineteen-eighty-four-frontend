@@ -16,8 +16,12 @@ function hideModal(){
   document.body.style.overflow = ""
 }
 
+function getSentenceTextElement(sentenceId) {
+  document.getElementById(`sentence-${ sentence.id }-text`)
+}
+
 function slapSentenceUpdateOnTheDom(sentence){
-  document.getElementById(`sentence-${ sentence.id }-text`).innerText = sentence.text
+  getSentenceTextElement(sentence.id).innerText = sentence.text
   hideModal()
 }
 
@@ -39,7 +43,7 @@ function updateSentence(event) {
 
 function editSentence(sentence){
   showModal()
-  modal.text.value = sentence.text
+  modal.text.value = getSentenceTextElement(sentence.id).innerText
   modal.id.value = sentence.id
 }
 
