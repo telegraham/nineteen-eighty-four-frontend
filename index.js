@@ -17,7 +17,7 @@ function hideModal(){
 }
 
 function getSentenceTextElement(sentenceId) {
-  return document.getElementById(`sentence-${ sentence.id }-text`)
+  return document.getElementById(`sentence-${ sentenceId }-text`)
 }
 
 function slapSentenceUpdateOnTheDom(sentence){
